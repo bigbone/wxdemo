@@ -1,0 +1,6 @@
+<!--components/custom-child2.wxml-->
+<view>
+  我是child2的内容 {{childProps}}
+  <button catchtap="childClick">child2按钮</button>
+  <slot/>
+</view>

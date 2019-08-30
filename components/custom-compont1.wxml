@@ -1,0 +1,5 @@
+<!--compont/custom-compont1.wxml-->
+<view bindtap="onTap">
+  <text>{{test}}</text>
+  <view>1111</view>
+</view>

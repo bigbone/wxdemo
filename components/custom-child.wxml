@@ -1,0 +1,7 @@
+<!--components/custom-child.wxml-->
+<view style='padding:40rpx 0;text-align:center;'>------------分割线---------------</view>
+<view>
+  我是child的内容 {{childProps}}
+  <button catchtap="childClick">child按钮</button>
+  <slot />
+</view>

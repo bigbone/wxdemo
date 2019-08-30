@@ -1,0 +1,6 @@
+<!--components/custom-parent.wxml-->
+<view>
+  我是parent的内容 {{parentProps}}
+  <button catchtap="parentClick">parent按钮</button>
+  <slot/>
+</view>

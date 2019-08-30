@@ -1,0 +1,12 @@
+/* pages/index/index.wxss */
+.red {
+  color : red;
+}
+.item{
+  display: flex;
+  font-size:14px;
+  border-bottom:1px solid #cccccc;
+}
+.item view{
+  padding:5px;
+}

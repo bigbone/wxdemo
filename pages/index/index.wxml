@@ -1,0 +1,36 @@
+ 
+ <view>
+  <parent bind:custom-event="parentclick">
+    <child bind:child-evnet="chlidclick">
+      <view>index.html的内容</view>
+    </child>
+    <child2>1111</child2>
+  </parent>
+</view>
+ <view class="container" >
+  <view class="no-order" hidden="{{userlist.length == 0 ? false : true}}">
+  <view wx:for-items="{{allist}}" wx:key="{{index}}">
+      <component-tag-name test="{{item[1]}}" bindmyevent="onMyEvent" data-text="{{item[1]}}"></component-tag-name>
+  </view>
+  <view  style="display:{{showload ? 'none':''}};height:100px;">111</view>
+  <view class="text" id="stroke-info">今天没值班</view>
+</view>
+
+  <view class="list" hidden="{{userlist.length == 0  ?  true : false}}">
+    <view class="item" wx:for-items="{{userlist}}" wx:key="{{index}}">
+      <view>{{item[0]}}</view>
+      <view>{{item[1]}}</view>
+      <view>{{item[2]}}</view>
+      <view class="{{(item[3] == curname) ? 'red':''}}">{{item[3]}}</view>
+      <view class="{{(item[4] == curname) ? 'red':''}}">{{item[4]}}</view>
+    </view>
+    <view  class="red" hidden="{{ has ? false : true }}">今天你要值班</view>
+  
+    <view class="section__title">选择日期</view>
+    <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+      <view class="picker">
+        当前选择：{{array[index]}}
+      </view>
+    </picker>
+  </view>
+</view>

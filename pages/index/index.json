@@ -1,0 +1,10 @@
+{
+      "enablePullDownRefresh": true,  
+      "onReachBottomDistance":10,
+      "usingComponents": {
+        "component-tag-name": "/components/custom-compont1",
+        "parent": "/components/custom-parent",
+        "child": "/components/custom-child",
+        "child2": "/components/custom-child2"
+      }
+}
